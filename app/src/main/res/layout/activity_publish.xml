@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PublishActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_publish_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/default_padding"
+            android:text="@string/publish_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/publish_publish"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_publish_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/default_margin"
+            android:background="@drawable/bg_publish_send"
+            android:paddingBottom="@dimen/default_padding"
+            android:paddingLeft="@dimen/large_padding"
+            android:paddingRight="@dimen/large_padding"
+            android:paddingTop="@dimen/default_padding"
+            android:text="@string/publish_send"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_publish_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/publish_input_min_height"
+        android:gravity="top"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@null"
+        android:hint="@string/publish_content_hint"
+        android:textSize="@dimen/publish_content_text_size" />
+    <GridView
+        android:id="@+id/gv_publish_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:padding="@dimen/default_padding"/>
+</LinearLayout>

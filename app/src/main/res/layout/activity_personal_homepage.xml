@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PersonalHomepageActivity">
+    <ListView
+        android:id="@+id/lv_personal_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_share_list"
+        tools:listheader="@layout/header_personal_homepage"
+        android:divider="@color/colorDivider"
+        android:dividerHeight="@dimen/default_margin"
+        />
+    <ImageView
+        android:id="@+id/iv_personal_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:padding="@dimen/default_padding"
+        android:src="@mipmap/ic_back" />
+    <RelativeLayout
+        android:id="@+id/rl_personal_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/iv_personal_back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:padding="@dimen/default_padding"
+            android:src="@mipmap/ic_back" />
+        <TextView
+            android:id="@+id/tv_personal_name_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/personal_name_text_size"
+            tools:text="My name is asdhgi" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorDivider"
+            android:layout_below="@id/iv_personal_back_top"/>
+    </RelativeLayout>
+</RelativeLayout>

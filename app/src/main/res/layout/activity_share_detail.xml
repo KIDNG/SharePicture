@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_share_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@mipmap/ic_back"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="asd"
+        />
+
+    <ListView
+        android:id="@+id/lv_share_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_share_detail_toolbar"
+        tools:listheader="@layout/item_share_list"
+        tools:listitem="@layout/header_personal_homepage"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@drawable/bg_share_detail_bottom"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_share_detail_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:drawableLeft="@mipmap/ic_collection_share_bottom"
+            android:drawablePadding="@dimen/default_padding"
+            android:drawableStart="@mipmap/ic_collection_share_bottom"
+            android:gravity="center"
+            android:padding="@dimen/default_padding"
+            android:text="@string/item_share_collection_normal"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/item_share_bottom_text_size"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/tv_share_detail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:drawableLeft="@mipmap/ic_comment_share_bottom"
+            android:drawablePadding="@dimen/default_padding"
+            android:drawableStart="@mipmap/ic_comment_share_bottom"
+            android:gravity="center"
+            android:padding="@dimen/default_padding"
+            android:text="@string/share_detail_comment"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/item_share_bottom_text_size"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/tv_share_detail_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:drawableLeft="@mipmap/ic_praise_share_bottom"
+            android:drawablePadding="@dimen/default_padding"
+            android:drawableStart="@mipmap/ic_praise_share_bottom"
+            android:gravity="center"
+            android:padding="@dimen/default_padding"
+            android:text="@string/share_detail_praise"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/item_share_bottom_text_size"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

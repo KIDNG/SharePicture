@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_personal_homepage">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_personal_avatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:src="@mipmap/bg_drawer"
+        app:civ_border_color="@color/colorDivider"
+        app:civ_border_width="2px" />
+    <TextView
+        android:id="@+id/tv_personal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_personal_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/personal_name_text_size"
+        tools:text="My name is asdhgi" />
+
+    <TextView
+        android:id="@+id/tv_personal_vertical_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_personal_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_margin"
+        android:text="|"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/personal_follow_text_size" />
+
+    <TextView
+        android:id="@+id/tv_personal_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_personal_vertical_divider"
+        android:layout_toLeftOf="@+id/tv_personal_vertical_divider"
+        android:layout_toStartOf="@+id/tv_personal_vertical_divider"
+        android:text="@string/persona_following"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/personal_follow_text_size" />
+
+    <TextView
+        android:id="@+id/tv_personal_follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_personal_vertical_divider"
+        android:layout_toEndOf="@+id/tv_personal_vertical_divider"
+        android:layout_toRightOf="@+id/tv_personal_vertical_divider"
+        android:text="@string/persona_follower"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/personal_follow_text_size" />
+    <TextView
+        android:id="@+id/tv_personal_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_below="@id/tv_personal_following"
+        android:gravity="center"/>
+</RelativeLayout>

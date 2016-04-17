@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="bg_activity">#FAFAFA</color>
+    <color name="color_item_share_name">#EF6C00</color>
+    <color name="color_item_share_collection">#FF9800</color>
+    <color name="color_item_share_time">#FFB74D</color>
+    <color name="about_login_button_color">#3f51b5</color>
+</resources>

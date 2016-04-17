@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_search_popup"
+              android:orientation="horizontal"
+    >
+
+    <EditText
+        android:id="@+id/et_search_popup_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/et_search"
+        android:drawablePadding="@dimen/default_padding"
+        android:drawableStart="@mipmap/et_search"
+        android:hint="@string/search_popup_search"
+        android:textSize="@dimen/search_popup_text_size"
+        android:textColor="@color/colorPrimaryText"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_search_popup_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/bg_person_list_concerned"
+        android:paddingBottom="@dimen/default_padding"
+        android:paddingLeft="@dimen/large_padding"
+        android:paddingRight="@dimen/large_padding"
+        android:paddingTop="@dimen/default_padding"
+        android:text="@string/search_popup_search"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/search_popup_text_size"
+        />
+</LinearLayout>

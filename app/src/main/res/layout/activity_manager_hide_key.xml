@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_manager_hide_key_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/ic_back"
+        app:title="@string/manager_hide_key_title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search_popup"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_manager_hide_key_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_manager_hide_key_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/manager_hide_key_hint_input"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/manager_user_input_text_size"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_manager_hide_key_ban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:background="@drawable/btn_manager_user_ban"
+            android:paddingBottom="@dimen/default_padding"
+            android:paddingLeft="@dimen/large_padding"
+            android:paddingRight="@dimen/large_padding"
+            android:paddingTop="@dimen/default_padding"
+            android:text="@string/manager_hide_key_add"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/manager_user_input_text_size"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.com.se.sharepictrue.widget.FlowLayoutForScroll
+        android:id="@+id/fl_hide_key_flow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|top"
+        >
+    </cn.com.se.sharepictrue.widget.FlowLayoutForScroll>
+</RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

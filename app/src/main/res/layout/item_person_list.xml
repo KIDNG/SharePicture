@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/default_padding"
+                android:paddingTop="@dimen/default_padding"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_person_list_avatar"
+        android:layout_width="@dimen/person_list_avatar_size"
+        android:layout_height="@dimen/person_list_avatar_size"
+        android:layout_margin="@dimen/default_margin"
+        android:src="@mipmap/ic_follower"
+        app:civ_border_color="@color/colorDivider"
+        app:civ_border_width="2px"/>
+
+    <TextView
+        android:id="@+id/tv_person_list_concern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/bg_person_list_no_concern"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="@string/person_list_concerned"
+        />
+
+    <TextView
+        android:id="@+id/tv_person_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/civ_person_list_avatar"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_toEndOf="@+id/civ_person_list_avatar"
+        android:layout_toRightOf="@+id/civ_person_list_avatar"
+        android:textSize="16sp"
+        tools:text="adskjfhkjsad"/>
+
+    <TextView
+        android:id="@+id/tv_person_list_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_person_list_name"
+        android:layout_alignStart="@+id/tv_person_list_name"
+        android:layout_below="@+id/tv_person_list_name"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_toLeftOf="@+id/tv_person_list_concern"
+        android:layout_toStartOf="@+id/tv_person_list_concern"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="15sp"
+        tools:text="adskjfhkjsadaaaaaaaaaaaaaaaaaaaaaa"/>
+
+</RelativeLayout>

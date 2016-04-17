@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/default_margin"
+              android:padding="@dimen/default_padding"
+    android:background="@drawable/bg_hide_key_item">
+    <TextView
+        android:id="@+id/tv_hide_key_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你妈B"
+        android:textSize="15sp"/>
+    <ImageView
+        android:id="@+id/iv_hide_key_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_delete_img"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"/>
+</LinearLayout>
